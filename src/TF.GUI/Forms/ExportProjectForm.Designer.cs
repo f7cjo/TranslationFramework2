@@ -66,7 +66,7 @@ namespace TF.GUI.Forms
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 10;
-            this.btnOK.Text = "Aceptar";
+            this.btnOK.Text = "Accept";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // btnCancel
@@ -78,7 +78,7 @@ namespace TF.GUI.Forms
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // gbExportItems
@@ -96,7 +96,7 @@ namespace TF.GUI.Forms
             this.gbExportItems.Size = new System.Drawing.Size(638, 376);
             this.gbExportItems.TabIndex = 11;
             this.gbExportItems.TabStop = false;
-            this.gbExportItems.Text = "Elementos a exportar";
+            this.gbExportItems.Text = "Elements to export";
             // 
             // btnOnlyModified
             // 
@@ -105,7 +105,7 @@ namespace TF.GUI.Forms
             this.btnOnlyModified.Name = "btnOnlyModified";
             this.btnOnlyModified.Size = new System.Drawing.Size(96, 23);
             this.btnOnlyModified.TabIndex = 6;
-            this.btnOnlyModified.Text = "Solo modificados";
+            this.btnOnlyModified.Text = "Only modified";
             this.btnOnlyModified.UseVisualStyleBackColor = true;
             this.btnOnlyModified.Click += new System.EventHandler(this.btnOnlyModified_Click);
             // 
@@ -116,7 +116,7 @@ namespace TF.GUI.Forms
             this.btnInvertSelection.Name = "btnInvertSelection";
             this.btnInvertSelection.Size = new System.Drawing.Size(96, 23);
             this.btnInvertSelection.TabIndex = 5;
-            this.btnInvertSelection.Text = "Invertir selección";
+            this.btnInvertSelection.Text = "Invert selection";
             this.btnInvertSelection.UseVisualStyleBackColor = true;
             this.btnInvertSelection.Click += new System.EventHandler(this.btnInvertSelection_Click);
             // 
@@ -127,7 +127,7 @@ namespace TF.GUI.Forms
             this.btnSelectNone.Name = "btnSelectNone";
             this.btnSelectNone.Size = new System.Drawing.Size(96, 23);
             this.btnSelectNone.TabIndex = 4;
-            this.btnSelectNone.Text = "Nada";
+            this.btnSelectNone.Text = "Nothing";
             this.btnSelectNone.UseVisualStyleBackColor = true;
             this.btnSelectNone.Click += new System.EventHandler(this.btnSelectNone_Click);
             // 
@@ -138,7 +138,7 @@ namespace TF.GUI.Forms
             this.btnSelectAll.Name = "btnSelectAll";
             this.btnSelectAll.Size = new System.Drawing.Size(96, 23);
             this.btnSelectAll.TabIndex = 3;
-            this.btnSelectAll.Text = "Todo";
+            this.btnSelectAll.Text = "Everything";
             this.btnSelectAll.UseVisualStyleBackColor = true;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
@@ -169,7 +169,7 @@ namespace TF.GUI.Forms
             this.gbOptions.Size = new System.Drawing.Size(241, 376);
             this.gbOptions.TabIndex = 12;
             this.gbOptions.TabStop = false;
-            this.gbOptions.Text = "Opciones";
+            this.gbOptions.Text = "Options";
             // 
             // chkSaveTempFiles
             // 
@@ -178,9 +178,9 @@ namespace TF.GUI.Forms
             this.chkSaveTempFiles.Name = "chkSaveTempFiles";
             this.chkSaveTempFiles.Size = new System.Drawing.Size(158, 17);
             this.chkSaveTempFiles.TabIndex = 2;
-            this.chkSaveTempFiles.Text = "Guardar ficheros temporales";
-            this.toolTip1.SetToolTip(this.chkSaveTempFiles, "[DEBUG] Selecciona esta opción si quieres mantener los ficheros temporales genera" +
-        "dos.");
+            this.chkSaveTempFiles.Text = "Saving temporary files";
+            this.toolTip1.SetToolTip(this.chkSaveTempFiles, "[DEBUG] Select this option if you want to keep the temporary files generated" +
+        "twice.");
             this.chkSaveTempFiles.UseVisualStyleBackColor = true;
             // 
             // chkForceRebuild
@@ -190,9 +190,9 @@ namespace TF.GUI.Forms
             this.chkForceRebuild.Name = "chkForceRebuild";
             this.chkForceRebuild.Size = new System.Drawing.Size(99, 17);
             this.chkForceRebuild.TabIndex = 1;
-            this.chkForceRebuild.Text = "Forzar creación";
-            this.toolTip1.SetToolTip(this.chkForceRebuild, "[DEBUG] Selecciona esta opción si quieres que la aplicación genere los ficheros d" +
-        "e traducción aunque no tengan cambios respecto al original.");
+            this.chkForceRebuild.Text = "Force creation";
+            this.toolTip1.SetToolTip(this.chkForceRebuild, "[DEBUG] Select this option if you want the application to generate the transla" +
+        "tion files even if they are unchanged from the original.");
             this.chkForceRebuild.UseVisualStyleBackColor = true;
             // 
             // chkCompress
@@ -204,10 +204,9 @@ namespace TF.GUI.Forms
             this.chkCompress.Name = "chkCompress";
             this.chkCompress.Size = new System.Drawing.Size(71, 17);
             this.chkCompress.TabIndex = 0;
-            this.chkCompress.Text = "Comprimir";
-            this.toolTip1.SetToolTip(this.chkCompress, "Selecciona esta opción si quieres que se compriman los ficheros exportados\\nSi no" +
-        " se marca, la exportación será más rápida, pero es posible que el fichero result" +
-        "ante no sea compatible.");
+            this.chkCompress.Text = "Compress";
+            this.toolTip1.SetToolTip(this.chkCompress, "Select this option if you want the exported files to be compressed.\\nIf uncheck" +
+        "ed, the export will be faster, but the resulting file may not be compatible.");
             this.chkCompress.UseVisualStyleBackColor = true;
             // 
             // ExportProjectForm
@@ -223,7 +222,7 @@ namespace TF.GUI.Forms
             this.MinimumSize = new System.Drawing.Size(757, 468);
             this.Name = "ExportProjectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Exportar Traducción";
+            this.Text = "Export Translation";
             this.gbExportItems.ResumeLayout(false);
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
