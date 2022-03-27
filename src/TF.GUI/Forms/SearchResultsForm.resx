@@ -157,7 +157,7 @@
     <value>776, 235</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Resultados de la búsqueda</value>
+    <value>Search results</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SearchResultsForm</value>
