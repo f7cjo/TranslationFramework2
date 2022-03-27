@@ -208,7 +208,7 @@
     <value>6</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>ATENCIÓN: La búsqueda es sensible a mayúsculas y minúsculas</value>
+    <value>CAUTION: The search is case sensitive.</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -235,7 +235,7 @@
     <value>7</value>
   </data>
   <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Cancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
     <value>btnCancel</value>
@@ -265,7 +265,7 @@
     <value>8</value>
   </data>
   <data name="btnOK.Text" xml:space="preserve">
-    <value>Aceptar</value>
+    <value>Accept</value>
   </data>
   <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
     <value>btnOK</value>
