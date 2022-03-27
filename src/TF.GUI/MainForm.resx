@@ -160,7 +160,7 @@
     <value>29, 28</value>
   </data>
   <data name="tsbNewFile.Text" xml:space="preserve">
-    <value>&amp;Nuevo</value>
+    <value>&amp;New</value>
   </data>
   <data name="tsbOpenFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -169,7 +169,7 @@
     <value>29, 28</value>
   </data>
   <data name="tsbOpenFile.Text" xml:space="preserve">
-    <value>&amp;Abrir</value>
+    <value>&amp;Open</value>
   </data>
   <data name="tsbSaveFile.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -181,7 +181,7 @@
     <value>29, 28</value>
   </data>
   <data name="tsbSaveFile.Text" xml:space="preserve">
-    <value>&amp;Guardar</value>
+    <value>&amp;Save</value>
   </data>
   <data name="tsbExportProject.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -193,7 +193,7 @@
     <value>29, 28</value>
   </data>
   <data name="tsbExportProject.Text" xml:space="preserve">
-    <value>&amp;Exportar</value>
+    <value>&amp;Export</value>
   </data>
   <data name="tsbSearch.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -205,10 +205,10 @@
     <value>29, 28</value>
   </data>
   <data name="tsbSearch.Text" xml:space="preserve">
-    <value>Buscar</value>
+    <value>Search</value>
   </data>
   <data name="tsbSearch.ToolTipText" xml:space="preserve">
-    <value>&amp;Buscar</value>
+    <value>&amp;Search</value>
   </data>
   <data name="tsbSearchInFiles.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -220,7 +220,7 @@
     <value>29, 28</value>
   </data>
   <data name="tsbSearchInFiles.Text" xml:space="preserve">
-    <value>B&amp;uscar en archivos</value>
+    <value>S&amp;earch in files</value>
   </data>
   <metadata name="tsExtender.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>385, 17</value>
@@ -262,13 +262,13 @@
     <value>609, 17</value>
   </metadata>
   <data name="LoadFileDialog.Filter" xml:space="preserve">
-    <value>Proyectos de traducción (*.tf)|*.tf</value>
+    <value>Translation projects (*.tf)|*.tf</value>
   </data>
   <data name="mniFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 24</value>
   </data>
   <data name="mniFile.Text" xml:space="preserve">
-    <value>&amp;Archivo</value>
+    <value>&amp;Archive</value>
   </data>
   <data name="mniFileNew.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -280,7 +280,7 @@
     <value>195, 26</value>
   </data>
   <data name="mniFileNew.Text" xml:space="preserve">
-    <value>&amp;Nuevo</value>
+    <value>&amp;New</value>
   </data>
   <data name="mniFileOpen.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -292,7 +292,7 @@
     <value>195, 26</value>
   </data>
   <data name="mniFileOpen.Text" xml:space="preserve">
-    <value>&amp;Abrir</value>
+    <value>&amp;Open</value>
   </data>
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 6</value>
@@ -310,7 +310,7 @@
     <value>195, 26</value>
   </data>
   <data name="mniFileSave.Text" xml:space="preserve">
-    <value>&amp;Guardar</value>
+    <value>&amp;Save</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 6</value>
@@ -322,7 +322,7 @@
     <value>195, 26</value>
   </data>
   <data name="mniFileExport.Text" xml:space="preserve">
-    <value>Exportar...</value>
+    <value>Export...</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 6</value>
@@ -331,13 +331,13 @@
     <value>195, 26</value>
   </data>
   <data name="mniFileExit.Text" xml:space="preserve">
-    <value>&amp;Salir</value>
+    <value>&amp;Exit</value>
   </data>
   <data name="mniEdit.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 24</value>
   </data>
   <data name="mniEdit.Text" xml:space="preserve">
-    <value>&amp;Editar</value>
+    <value>&amp;Edit</value>
   </data>
   <data name="mniEditSearch.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -349,7 +349,7 @@
     <value>317, 26</value>
   </data>
   <data name="mniEditSearch.Text" xml:space="preserve">
-    <value>&amp;Buscar</value>
+    <value>&amp;Search</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>314, 6</value>
@@ -364,19 +364,19 @@
     <value>317, 26</value>
   </data>
   <data name="mniEditSearchInFiles.Text" xml:space="preserve">
-    <value>B&amp;uscar en archivos</value>
+    <value>S&amp;earch in files</value>
   </data>
   <data name="mniHelp.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 24</value>
   </data>
   <data name="mniHelp.Text" xml:space="preserve">
-    <value>Ay&amp;uda</value>
+    <value>H&amp;elp</value>
   </data>
   <data name="mniHelpAbout.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 26</value>
   </data>
   <data name="mniHelpAbout.Text" xml:space="preserve">
-    <value>&amp;Acerca de...</value>
+    <value>&amp;About...</value>
   </data>
   <metadata name="mnuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -385,7 +385,7 @@
     <value>224, 26</value>
   </data>
   <data name="mniBulkTexts.Text" xml:space="preserve">
-    <value>Textos</value>
+    <value>Text</value>
   </data>
   <data name="mniBulkImagesExport.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -394,7 +394,7 @@
     <value>224, 26</value>
   </data>
   <data name="mniBulkImagesExport.Text" xml:space="preserve">
-    <value>Exportar</value>
+    <value>Export</value>
   </data>
   <data name="mniBulkImagesImport.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -403,19 +403,19 @@
     <value>224, 26</value>
   </data>
   <data name="mniBulkImagesImport.Text" xml:space="preserve">
-    <value>Importar</value>
+    <value>Import</value>
   </data>
   <data name="mniBulkImages.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 26</value>
   </data>
   <data name="mniBulkImages.Text" xml:space="preserve">
-    <value>Imágenes</value>
+    <value>Images</value>
   </data>
   <data name="mniBulk.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 24</value>
   </data>
   <data name="mniBulk.Text" xml:space="preserve">
-    <value>Masivo</value>
+    <value>Bulk</value>
   </data>
   <data name="mnuMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -445,7 +445,7 @@
     <value>150, 26</value>
   </data>
   <data name="mniBulkTextsExport.Text" xml:space="preserve">
-    <value>Exportar</value>
+    <value>Export</value>
   </data>
   <data name="mniBulkTextsImport.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -454,7 +454,7 @@
     <value>150, 26</value>
   </data>
   <data name="mniBulkTextsImport.Text" xml:space="preserve">
-    <value>Importar</value>
+    <value>Import</value>
   </data>
   <metadata name="FolderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>766, 17</value>
