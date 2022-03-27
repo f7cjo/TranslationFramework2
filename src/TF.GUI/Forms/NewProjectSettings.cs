@@ -39,15 +39,15 @@ namespace TF.GUI.Forms
 
         private void btnSearchWorkFolder_Click(object sender, EventArgs e)
         {
-            var description = string.Concat("Selecciona la carpeta de trabajo.", Environment.NewLine,
-                "En ella se guardarán todos los ficheros necesarios para la traducción.", Environment.NewLine,
-                "Asegúrate de que el disco tiene espacio suficiente.");
+            var description = string.Concat("Select the working folder.", Environment.NewLine,
+                "All the files necessary for the translation will be stored in it.", Environment.NewLine,
+                "Make sure that the disk has enough space.");
             SearchFolder(description, txtWorkFolder, true);
         }
 
         private void btnSearchInstallFolder_Click(object sender, EventArgs e)
         {
-            var description = "Selecciona la carpeta dónde está el juego.";
+            var description = "Select the folder where the game is located.";
             SearchFolder(description, txtInstallFolder, false);
         }
 
