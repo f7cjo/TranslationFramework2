@@ -86,8 +86,8 @@ namespace TF.GUI
             {
                 var result =
                     MessageBox.Show(
-                        "Esto restaurará los ficheros originales de este contenedor. Esta operación no se puede deshacer.\n¿Quieres continuar?",
-                        "Restaurar ficheros", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        "This will restore the original files in this container. This operation cannot be undone.\nDo you want to continue?",
+                        "Restore files", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
@@ -102,8 +102,8 @@ namespace TF.GUI
             {
                 var result =
                     MessageBox.Show(
-                        "Esto restaurará el fichero original. Esta operación no se puede deshacer.\n¿Quieres continuar?",
-                        "Restaurar ficheros", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        "This will restore the original file. This operation cannot be undone.\nDo you want to continue?",
+                        "Restore files", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
@@ -139,8 +139,8 @@ namespace TF.GUI
             {
                 if (_currentFile.NeedSaving)
                 {
-                    var result = MessageBox.Show("Hay cambios pendientes en el fichero.\n¿Quieres guardarlos?",
-                        "Guardar cambios", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                    var result = MessageBox.Show("There are pending changes in the file.\nDo you want to save them?",
+                        "Save changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
                     if (result == DialogResult.Cancel)
                     {
