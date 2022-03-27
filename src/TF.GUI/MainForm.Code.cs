@@ -55,7 +55,7 @@ namespace TF.GUI
 #if DEBUG
                     PathHelper.DeleteDirectory(workFolder);
 #else
-                    MessageBox.Show($"La carpeta {workFolder} no está vacía. Debes elegir una carpeta vacía.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"The {workFolder} folder is not empty. You must choose an empty folder.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
 #endif
                 }
@@ -67,7 +67,7 @@ namespace TF.GUI
 
             var project = new TranslationProject(game, gameFolder, workFolder);
 
-            var workForm = new WorkingForm(dockTheme, "Nueva traducción");
+            var workForm = new WorkingForm(dockTheme, "New translation");
             
             workForm.DoWork += (sender, args) =>
             {
@@ -76,14 +76,14 @@ namespace TF.GUI
                 try
                 {
                     project.ReadTranslationFiles(worker);
-                    worker.ReportProgress(-1, "FINALIZADO");
+                    worker.ReportProgress(-1, "FINISHED");
                 }
                 catch (UserCancelException)
                 {
                     args.Cancel = true;
-                    worker.ReportProgress(-1, "Eliminando ficheros...");
+                    worker.ReportProgress(-1, "Deleting files...");
                     PathHelper.DeleteDirectory(workFolder);
-                    worker.ReportProgress(-1, "Terminado");
+                    worker.ReportProgress(-1, "Finished");
                 }
 #if !DEBUG
                 catch (Exception e)
@@ -131,7 +131,7 @@ namespace TF.GUI
                     return;
                 }
 
-                var workForm = new WorkingForm(dockTheme, "Cargar traducción", true);
+                var workForm = new WorkingForm(dockTheme, "Load translation", true);
 
                 TranslationProject project = null;
 
@@ -195,8 +195,8 @@ namespace TF.GUI
                     if (_currentFile.NeedSaving)
                     {
                         var result = MessageBox.Show(
-                            "Es necesario guardar los cambios antes de continuar.\n¿Quieres guardarlos?",
-                            "Guardar cambios", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            "It is necessary to save the changes before continuing.\nDo you want to save them?",
+                            "Save changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (result == DialogResult.No)
                         {
@@ -222,7 +222,7 @@ namespace TF.GUI
                 var selectedContainers = form.SelectedContainers;
                 var options = form.Options;
 
-                var workForm = new WorkingForm(dockTheme, "Exportar traducción");
+                var workForm = new WorkingForm(dockTheme, "Export translation");
 
                 workForm.DoWork += (sender, args) =>
                 {
@@ -232,9 +232,9 @@ namespace TF.GUI
                     {
                         _project.Export(selectedContainers, options, worker);
 
-                        worker.ReportProgress(-1, "FINALIZADO");
+                        worker.ReportProgress(-1, "FINISHED");
                         worker.ReportProgress(-1, string.Empty);
-                        worker.ReportProgress(-1, $"Los ficheros exportados están en {_project.ExportFolder}");
+                        worker.ReportProgress(-1, $"The exported files are in {_project.ExportFolder}");
                     }
                     catch (UserCancelException)
                     {
@@ -266,7 +266,7 @@ namespace TF.GUI
                 }
 
                 var searchString = form.SearchString;
-                var workForm = new WorkingForm(dockTheme, "Buscar en ficheros", true);
+                var workForm = new WorkingForm(dockTheme, "Search in files", true);
                 IList<Tuple<TranslationFileContainer, TranslationFile>> filesFound = null;
                 workForm.DoWork += (sender, args) =>
                 {
@@ -276,7 +276,7 @@ namespace TF.GUI
                     {
                         filesFound = _project.SearchInFiles(searchString, worker);
 
-                        worker.ReportProgress(-1, "FINALIZADO");
+                        worker.ReportProgress(-1, "FINISHED");
                     }
                     catch (UserCancelException)
                     {
@@ -322,7 +322,7 @@ namespace TF.GUI
 
                 if (!textFound)
                 {
-                    MessageBox.Show("No se han encontrado coincidencias.", "Buscar", MessageBoxButtons.OK,
+                    MessageBox.Show("No matches found.", "Search", MessageBoxButtons.OK,
                         MessageBoxIcon.Exclamation);
                 }
             }
@@ -338,7 +338,7 @@ namespace TF.GUI
 
                     if (!textFound)
                     {
-                        MessageBox.Show("No se han encontrado coincidencias.", "Buscar", MessageBoxButtons.OK,
+                        MessageBox.Show("No matches found.", "Search", MessageBoxButtons.OK,
                             MessageBoxIcon.Exclamation);
                     }
                 }
@@ -354,8 +354,8 @@ namespace TF.GUI
                     if (_currentFile.NeedSaving)
                     {
                         var result = MessageBox.Show(
-                            "Es necesario guardar los cambios antes de continuar.\n¿Quieres guardarlos?",
-                            "Guardar cambios", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            "It is necessary to save the changes before continuing.\nDo you want to save them?",
+                            "Save changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (result == DialogResult.No)
                         {
@@ -369,7 +369,7 @@ namespace TF.GUI
                     }
                 }
 
-                FolderBrowserDialog.Description = "Selecciona la carpeta en la que se guardarán los ficheros Po";
+                FolderBrowserDialog.Description = "Select the folder in which the Po files will be saved.";
                 FolderBrowserDialog.ShowNewFolderButton = true;
 
                 var formResult = FolderBrowserDialog.ShowDialog(this);
@@ -379,7 +379,7 @@ namespace TF.GUI
                     return;
                 }
 
-                var workForm = new WorkingForm(dockTheme, "Exportar a Po");
+                var workForm = new WorkingForm(dockTheme, "Export Po");
 
                 workForm.DoWork += (sender, args) =>
                 {
@@ -391,9 +391,9 @@ namespace TF.GUI
 #endif
                         _project.ExportPo(FolderBrowserDialog.SelectedPath, worker);
 
-                        worker.ReportProgress(-1, "FINALIZADO");
+                        worker.ReportProgress(-1, "FINISHED");
                         worker.ReportProgress(-1, string.Empty);
-                        worker.ReportProgress(-1, $"Los ficheros exportados están en {FolderBrowserDialog.SelectedPath}");
+                        worker.ReportProgress(-1, $"The exported files are in {FolderBrowserDialog.SelectedPath}.");
 #if !DEBUG
                     }
                     catch (UserCancelException e)
@@ -421,8 +421,8 @@ namespace TF.GUI
                     if (_currentFile.NeedSaving)
                     {
                         var result = MessageBox.Show(
-                            "Es necesario guardar los cambios antes de continuar.\n¿Quieres guardarlos?",
-                            "Guardar cambios", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            "It is necessary to save the changes before continuing.\nDo you want to save them?",
+                            "Save changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (result == DialogResult.No)
                         {
@@ -436,7 +436,7 @@ namespace TF.GUI
                     }
                 }
 
-                FolderBrowserDialog.Description = "Selecciona la carpeta en la que se guardarán las imágenes";
+                FolderBrowserDialog.Description = "Select the folder in which the images will be stored";
                 FolderBrowserDialog.ShowNewFolderButton = true;
 
                 var formResult = FolderBrowserDialog.ShowDialog(this);
@@ -446,7 +446,7 @@ namespace TF.GUI
                     return;
                 }
 
-                var workForm = new WorkingForm(dockTheme, "Exportar Imágenes");
+                var workForm = new WorkingForm(dockTheme, "Export Images");
 
                 workForm.DoWork += (sender, args) =>
                 {
@@ -458,9 +458,9 @@ namespace TF.GUI
 #endif
                         _project.ExportImages(FolderBrowserDialog.SelectedPath, worker);
 
-                        worker.ReportProgress(-1, "FINALIZADO");
+                        worker.ReportProgress(-1, "FINISHED");
                         worker.ReportProgress(-1, string.Empty);
-                        worker.ReportProgress(-1, $"Los ficheros exportados están en {FolderBrowserDialog.SelectedPath}");
+                        worker.ReportProgress(-1, $"The exported files are in {FolderBrowserDialog.SelectedPath}.");
 #if !DEBUG
                     }
                     catch (UserCancelException e)
@@ -488,8 +488,8 @@ namespace TF.GUI
                     if (_currentFile.NeedSaving)
                     {
                         var result = MessageBox.Show(
-                            "Es necesario guardar los cambios antes de continuar.\n¿Quieres guardarlos?",
-                            "Guardar cambios", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            "It is necessary to save the changes before continuing.\nDo you want to save them?",
+                            "Save changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (result == DialogResult.No)
                         {
@@ -503,7 +503,7 @@ namespace TF.GUI
                     }
                 }
 
-                FolderBrowserDialog.Description = "Selecciona la carpeta raiz con los ficheros Po";
+                FolderBrowserDialog.Description = "Select the root folder with the Po files.";
                 FolderBrowserDialog.ShowNewFolderButton = false;
 
                 var formResult = FolderBrowserDialog.ShowDialog(this);
@@ -516,7 +516,7 @@ namespace TF.GUI
                 var openFile = _currentFile;
                 ExplorerOnFileChanged(null);
                 
-                var workForm = new WorkingForm(dockTheme, "Importar Po");
+                var workForm = new WorkingForm(dockTheme, "Import Po");
 
                 workForm.DoWork += (sender, args) =>
                 {
@@ -526,7 +526,7 @@ namespace TF.GUI
                     {
                         _project.ImportPo(FolderBrowserDialog.SelectedPath, worker);
 
-                        worker.ReportProgress(-1, "FINALIZADO");
+                        worker.ReportProgress(-1, "FINISHED");
                         worker.ReportProgress(-1, string.Empty);
                     }
                     catch (UserCancelException)
@@ -556,8 +556,8 @@ namespace TF.GUI
                     if (_currentFile.NeedSaving)
                     {
                         var result = MessageBox.Show(
-                            "Es necesario guardar los cambios antes de continuar.\n¿Quieres guardarlos?",
-                            "Guardar cambios", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            "It is necessary to save the changes before continuing.\nDo you want to save them?",
+                            "Save changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (result == DialogResult.No)
                         {
@@ -571,7 +571,7 @@ namespace TF.GUI
                     }
                 }
 
-                FolderBrowserDialog.Description = "Selecciona la carpeta raiz con las imágenes";
+                FolderBrowserDialog.Description = "Select the root folder with the images";
                 FolderBrowserDialog.ShowNewFolderButton = false;
 
                 var formResult = FolderBrowserDialog.ShowDialog(this);
@@ -594,7 +594,7 @@ namespace TF.GUI
                     {
                         _project.ImportImages(FolderBrowserDialog.SelectedPath, worker);
 
-                        worker.ReportProgress(-1, "FINALIZADO");
+                        worker.ReportProgress(-1, "FINISHED");
                         worker.ReportProgress(-1, string.Empty);
                     }
                     catch (UserCancelException)
